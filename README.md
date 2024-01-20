@@ -18,5 +18,5 @@ The revamped "NFT Site" is an updated version of the original, now featuring a f
 Clone the repository and open `index.html` in a browser to view the responsive NFT site across different devices.
 
 ## Demo
-[View Live Project](#)
+[View Live Project](https://cheery-pithivier-3bd86d.netlify.app/)
 
