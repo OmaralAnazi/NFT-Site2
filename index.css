@@ -1,0 +1,214 @@
+body {
+    color: #2b283a;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* typography */
+
+h1, .subheading {
+    margin: 0;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 1.75rem;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.35rem;
+}
+
+.subheading {
+    color: #d0aaff;
+    font-size: 1.125rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* links */
+
+a {
+    color: #ef5839;
+    text-decoration: underline dotted; 
+}
+
+a:hover, a:active {
+    color: #d4b44c;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    border-radius: 4.6px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-bottom: 0.7em;
+}
+
+.btn-dark {
+    background: #5f29a3;
+    color: whitesmoke
+}
+
+.btn-mid {
+    background: #F0E0FF; 
+    color: #5f29a3; 
+}
+
+.btn-light {
+    background: whitesmoke;
+    color: #5f29a3; 
+}
+ 
+.btn:hover, 
+.btn:active {
+    background-color: #f3e885;
+    color: #2b238a;
+}
+
+/* layout */
+
+header {
+    text-align: center;
+}
+
+header .container h1 {
+    display: flex;
+    flex-direction: column;
+}
+
+header, section, footer {
+    padding: 1em 0;
+}
+
+header, .section-two {
+    background-color: #5f29a3;
+}
+
+.section-two {
+    color: whitesmoke;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-image {
+    width:100%;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-two-image-container {
+    margin-bottom: 2em;
+}
+
+.feature-image {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    border-radius: 4.6px;
+}
+
+footer {
+    text-align: center;
+    color: #5f29a3;
+}
+
+/* NAVIGATION */
+
+nav {
+    margin: 1em 0 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 0.85em 0;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li:not(:last-child) {
+    border-bottom: 1px dotted gray;
+}
+
+
+/* MEDIA QUERIE BREAKPOINTS */
+
+@media (min-width:768px) {
+    body {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .subheading {
+        font-size: 1.75rem;
+    }
+
+    header .container {
+        display: flex;
+        gap: 2em;
+        text-align: left;
+        align-items: center;
+    }
+
+    nav {
+        margin-left: auto;
+    }
+
+    ul {
+        display: flex;
+        gap: 2em;
+    }
+
+    li a {
+        padding: 0;
+        font-size: 1.75rem;
+    }
+
+    li:not(:last-child) {
+        border-bottom: none;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .section-two-image-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feature-image-container{
+        width: 48%;
+        max-width: 900px;
+        text-align: center;
+    }
+
+    .btn{
+        display: inline-block;
+        width: 15%;
+        margin-bottom: 0.7em;
+    }
+
+    header, section, footer{
+        padding: 2.8125em 0;
+    }
+}
